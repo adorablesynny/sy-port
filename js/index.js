@@ -62,7 +62,7 @@ $(window).scroll(function(){
     $("#page1 .green").css({transform:"translateX("+ scrollcolor +"px"});
 
     /* 타이틀 나타나게 하기 */
-    $("section").each(function(index){
+    $("#page1, #page2, #page3, #page4, #page6").each(function(index){
         if( scrollTop >= $(this).offset().top-200 ){
             $(this).find("h2 span").each((index)=>{
                 setTimeout(() => {
@@ -97,6 +97,7 @@ $(window).scroll(function(){
     /* 3 각 div에 맞춰 textbox 나타나게 하기 */
     let div2 = $("#page3 > .right > div:nth-child(2)").offset().top,
         div3 = $("#page3 > .right > div:nth-child(3)").offset().top,
+        div4 = $("#page3 > .right > div:nth-child(4)").offset().top,
         textbox = $("#page3 .left .portfoliot");
 
     textbox.removeClass("appear");
@@ -109,6 +110,10 @@ $(window).scroll(function(){
     if( scrollTop >= div3-180 ){
         textbox.removeClass("appear");
         textbox.eq(2).addClass("appear");
+    }
+    if( scrollTop >= div4-180 ){
+        textbox.removeClass("appear");
+        textbox.eq(3).addClass("appear");
     }
 
     /* 4 효과 주기 */
@@ -130,7 +135,7 @@ $(window).scroll(function(){
 
     /* 5 텍스트 움직이기 */
     if( scrollTop >= page5-1000){
-        let textmove = scrollTop/-5;
+        let textmove = scrollTop/-6;
 
         $("#page5 .mytext").css({transform:"translateX("+ textmove +"px"});
     }
