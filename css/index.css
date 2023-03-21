@@ -621,11 +621,14 @@ h2.blink::after{
     width:80%;
     height:auto;
     position: absolute;
-    top:30%;
+    top:35%;
     left:100px;
     z-index:3;
     transform:translateX(-40px);
     opacity:0;
+}
+#page3 .left div.portfoliot:last-child{
+    top:40%;
 }
 #page3 .left div.appear{
     animation:textappear 1s both;
