@@ -279,7 +279,7 @@ h2.blink::after{
 }
 #page1 .middle-content .main-circle{
     position: relative;
-    top:20px;
+    top:100px;
     left:50%;
     transform:translateX(-50%) scale(1);
     width: 400px;
@@ -289,6 +289,11 @@ h2.blink::after{
     display:grid;
     align-items:end;
     transition:all .5s;
+    opacity:0;
+    animation:maincircle 0.5s .4s both;
+}
+@keyframes maincircle{
+    to{ opacity:1; top:20px;}
 }
 #page1 .middle-content .main-circle:hover{
     transform:translateX(-50%) scale(1.05);
