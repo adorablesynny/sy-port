@@ -716,7 +716,7 @@ h2.blink::after{
     font-weight:bold;
     text-decoration:none;
     position: absolute;
-    bottom:200px;
+    top:68%;
     left:50%;
     transform:translateX(-50%);
     border:2px solid var(--clear); 
@@ -789,7 +789,7 @@ h2.blink::after{
 }
 #page4 .introduce .intro-left{
     top:-50px;
-    left:300px;
+    left:28%;
     width:550px;
     height:550px;
     background-color:rgba(255,255,255,0.6);
@@ -810,8 +810,8 @@ h2.blink::after{
     transition:transform 500ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
 }
 #page4 .introduce .intro-right{
-    top:50px;
-    right:180px;
+    top:15%;
+    left:54%;
     width:850px;
     height:auto;
     opacity:0;
@@ -901,7 +901,7 @@ h2.blink::after{
     height:100px;
     transform:translateX(0);
     position: absolute;
-    left:1200px;
+    left:80%;
 }
 #page5 .mytext p{
     font-size:90px;
@@ -919,6 +919,7 @@ h2.blink::after{
 /* 6 */
 #page6{
     overflow-y:hidden;
+    height:90vh;
 }
 #page6 .contact-wrap{
     padding:250px 0 0 0;
@@ -983,56 +984,13 @@ h2.blink::after{
     padding:50px 0 0 0;
     text-align:center;
 }
-/* #page6 .contact-wrap a{
-    padding:10px 50px;
-    font-size:40px;
-    text-decoration:none;
-    font-family:var(--english);
-    color:var(--maincolor);
-    font-weight:700;
-    position: absolute;
-    bottom:150px;
-    left:50%;
-    transform:translateX(-50%);
-    z-index:2;
-}
-#page6 .contact-wrap a:after, #page6 .contact-wrap a:before{
-    content:"";
-    position:absolute;
-    top:0;
-    width:50%;
-    z-index:-1;
-    height:100%;
-    background-color: var(--maincolor);
-    transform:scaleX(0);
-    transition:transform 0.5s;
-}
-#page6 .contact-wrap a:after{
-    right:0;
-    transform-origin:right;
-}
-#page6 .contact-wrap a:before{
-    left:0;
-    transform-origin:left;
-}
-#page6 .contact-wrap a:hover{
-    color:var(--subcolor);
-}
-#page6 .contact-wrap a:hover:after{
-    transform:scaleX(1) translateX(-1px);
-    transform-origin:left;
-}
-#page6 .contact-wrap a:hover:before{
-    transform:scaleX(1) translateX(1px);
-    transform-origin:right;
-} */
 #page6 .deco-circle{
     width:1000px;
     height:1000px;
     border-radius:50% 50% 0 0;
     background-color: var(--subcolor);
     position: absolute;
-    bottom:-70%;
+    bottom:-700px;
     left:50%;
     transform:translateX(-50%);
     opacity:0;

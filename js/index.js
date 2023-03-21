@@ -169,7 +169,7 @@ $("#page4 .intro-left").mousemove(function(e){
     let pageY = e.pageY;
 
     //기준점을 가운데로 맞추기 위함
-    let standardX = $(window).width()/2 - pageX;
+    let standardX = $(window).width() - pageX;
     let standardY = $(window).height()/2 - pageY;
 
     //이미지 움직이기
