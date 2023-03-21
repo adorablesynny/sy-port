@@ -76,6 +76,44 @@ h2.blink::after{
     animation:textblink .9s 2s infinite;
     opacity:0;
 }
+/* loading */
+#load{
+    width:100vw;
+    height:100vh;
+    background-image:linear-gradient(to right, rgb(97, 98, 206) 10%, rgb(102, 234, 207) 100%);
+    z-index:999;
+    overflow-y:hidden;
+}
+.loading{
+    width:20px;
+    height:100px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    animation:circle ease-in-out 1s 100;
+}
+.loading > span{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:#fff;
+    display:block;
+    box-shadow:0 0 10px 2px #fff;
+}
+.loading > .circle1{
+    position:absolute;
+    top:0;
+}   
+.loading > .circle2{
+    position:absolute;
+    bottom:0;
+}
+
+@keyframes circle{
+    0%{ transform:rotate(0deg);}
+    100%{ transform:rotate(180deg);}
+}
 /* 1 */
 #page1 .wrap{
     width:100%;
@@ -248,7 +286,7 @@ h2.blink::after{
     50%{transform:rotate(180deg) scale(0.3);}
     100%{transform:rotate(360deg) scale(1);}
 }
-#page1 .green{
+#page1 .purple{
     position: absolute;
     top:0;
     left:-50%;
@@ -258,16 +296,16 @@ h2.blink::after{
     height:100%;
     z-index:2;
 }
-#page1 .green .row:nth-child(1) .circle{ animation-delay:.2s;}
-#page1 .green .row:nth-child(2) .circle{ animation-delay:.3s;}
-#page1 .green .row:nth-child(3) .circle{ animation-delay:.4s;}
-#page1 .green .row:nth-child(4) .circle{ animation-delay:.5s;}
-#page1 .green .row:nth-child(5) .circle{ animation-delay:.6s;}
-#page1 .green .row:nth-child(6) .circle{ animation-delay:.7s;}
-#page1 .green .row:nth-child(7) .circle{ animation-delay:.8s;}
-#page1 .green .row:nth-child(8) .circle{ animation-delay:.9s;}
-#page1 .green .row:nth-child(9) .circle{ animation-delay:1s;}
-#page1 .green .row:nth-child(10) .circle{ animation-delay:1.1s;}
+#page1 .purple .row:nth-child(1) .circle{ animation-delay:.2s;}
+#page1 .purple .row:nth-child(2) .circle{ animation-delay:.3s;}
+#page1 .purple .row:nth-child(3) .circle{ animation-delay:.4s;}
+#page1 .purple .row:nth-child(4) .circle{ animation-delay:.5s;}
+#page1 .purple .row:nth-child(5) .circle{ animation-delay:.6s;}
+#page1 .purple .row:nth-child(6) .circle{ animation-delay:.7s;}
+#page1 .purple .row:nth-child(7) .circle{ animation-delay:.8s;}
+#page1 .purple .row:nth-child(8) .circle{ animation-delay:.9s;}
+#page1 .purple .row:nth-child(9) .circle{ animation-delay:1s;}
+#page1 .purple .row:nth-child(10) .circle{ animation-delay:1.1s;}
 #page1 .middle-content{
     position: absolute;
     top:50%;
@@ -329,6 +367,11 @@ h2.blink::after{
     padding:90px 0;
     text-shadow:0px 0px 10px var(--clear);
     color:var(--clear);
+    opacity:0;
+    animation:nameshow 1s .3s both;
+}
+@keyframes nameshow{
+    to{ opacity:1; }
 }
 #page1 .middle-content .name span:nth-child(13),
 #page1 .middle-content .name span:nth-child(15),

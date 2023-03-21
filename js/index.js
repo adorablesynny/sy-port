@@ -1,3 +1,7 @@
+/* loading */
+$(window).load(function(){
+    $("#load").fadeOut();
+});
 /* 1 이름 한글자씩 나타나게 하기*/
 let $name = $("#page1 .middle-content .name");
 
