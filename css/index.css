@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
     z-index:9;
     background: url("../img/gototop.png") no-repeat left top;
     background-size: 70%;
-    opacity:80%;
+    opacity:0%;
 }
 #page1, #page2, #page3, #page4, #page5, #page6{
     width:100%;
@@ -367,12 +367,8 @@ h2.blink::after{
     padding:90px 0;
     text-shadow:0px 0px 10px var(--clear);
     color:var(--clear);
-    opacity:0;
-    animation:nameshow 1s .3s both;
 }
-@keyframes nameshow{
-    to{ opacity:1; }
-}
+
 #page1 .middle-content .name span:nth-child(13),
 #page1 .middle-content .name span:nth-child(15),
 #page1 .middle-content .name span:nth-child(17),

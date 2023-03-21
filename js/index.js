@@ -1,24 +1,27 @@
 /* loading */
 $(window).load(function(){
     $("#load").fadeOut();
-});
-/* 1 이름 한글자씩 나타나게 하기*/
-let $name = $("#page1 .middle-content .name");
+    $(".gotoTop").css({"opacity":"80%"});
 
-$name.each(function(){
-    let text = $(this).text();
-    let split = text.split('').join("</span><span aria-hidden='true'>");
-    split = "<span aria-hidden='true'>" + split + "</span>"
-    $(this).html(split).attr("aria-label", text);
-});
+    /* 1 로딩 끝난 이후부터 이름 한글자씩 나타나게 하기*/
+    let $name = $("#page1 .middle-content .name");
 
-$("#page1 .middle-content").each(function(index){
-    $(this).find(".name span").each((index)=>{
-        setTimeout(() => {
-            $(this).find(".name span").eq(index).addClass("show");
-        },200 * index)
+    $name.each(function(){
+        let text = $(this).text();
+        let split = text.split('').join("</span><span aria-hidden='true'>");
+        split = "<span aria-hidden='true'>" + split + "</span>"
+        $(this).html(split).attr("aria-label", text);
+    });
+
+    $("#page1 .middle-content").each(function(index){
+        $(this).find(".name span").each((index)=>{
+            setTimeout(() => {
+                $(this).find(".name span").eq(index).addClass("show");
+            },200 * index)
+        });
     });
 });
+
 
 /* 팝업 띄우기 */
 let popupbotton = $(".alarm"),
@@ -63,7 +66,7 @@ $(window).scroll(function(){
     /* 1 스크롤 효과 주기 */
     let scrollcolor = scrollTop;
 
-    $("#page1 .green").css({transform:"translateX("+ scrollcolor +"px"});
+    $("#page1 .purple").css({transform:"translateX("+ scrollcolor +"px"});
 
     /* 타이틀 나타나게 하기 */
     $("#page1, #page2, #page3, #page4, #page6").each(function(index){
@@ -99,14 +102,19 @@ $(window).scroll(function(){
     }
 
     /* 3 각 div에 맞춰 textbox 나타나게 하기 */
-    let div2 = $("#page3 > .right > div:nth-child(2)").offset().top,
+    let div1 = $("#page3 > .right > div:first-child").offset().top,
+        div2 = $("#page3 > .right > div:nth-child(2)").offset().top,
         div3 = $("#page3 > .right > div:nth-child(3)").offset().top,
         div4 = $("#page3 > .right > div:nth-child(4)").offset().top,
         textbox = $("#page3 .left .portfoliot");
 
     textbox.removeClass("appear");
-    textbox.eq(0).addClass("appear");
+    // textbox.eq(0).addClass("appear");
 
+    if( scrollTop >= div1-180){
+        textbox.removeClass("appear");
+        textbox.eq(0).addClass("appear");
+    }
     if( scrollTop >= div2-180){
         textbox.removeClass("appear");
         textbox.eq(1).addClass("appear");
