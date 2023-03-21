@@ -385,7 +385,7 @@ h2.blink::after{
     flex-direction:row;
 }
 #page2 h2.blink::after{
-    animation:textblink .9s 1.3s infinite;
+    animation:textblink .9s 1s infinite;
 }
 #page2 .wrap .skills{
     width:24%;
