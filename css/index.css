@@ -424,7 +424,7 @@ h2.blink::after{
 #page2 .wrap{
     width:80%;
     margin:0 auto;
-    padding:250px 0 0 0;
+    padding:30vh 0 0 0;
     display:flex;
     flex-direction:row;
 }
@@ -628,7 +628,7 @@ h2.blink::after{
     opacity:0;
 }
 #page3 .left div.portfoliot:last-child{
-    top:40%;
+    top:38%;
 }
 #page3 .left div.appear{
     animation:textappear 1s both;
@@ -775,7 +775,7 @@ h2.blink::after{
 #page4 .introduce{
     width:100%;
     height:100%;
-    padding:250px 0 0 0;
+    padding:30vh 0 0 0;
     box-sizing:border-box;
 }
 #page4 .introduce .intro-wrap{
@@ -815,7 +815,7 @@ h2.blink::after{
     width:850px;
     height:auto;
     opacity:0;
-    margin:80px 0 0 0;
+    margin:3vh 0 0 0;
     right:0;
 }
 #page4 .introduce .intro-left.appear{
@@ -846,7 +846,7 @@ h2.blink::after{
 }
 #page4 .introduce .img-deco{
     position: absolute;
-    top:200px;
+    top:35vh;
     left:0;
     width:100%;
     height:100%;
@@ -882,7 +882,7 @@ h2.blink::after{
     background-color: var(--maincolor);
     position: absolute;
     top:0px;
-    left:250px;
+    left:30vh;
     animation:circlemove 4s .8s infinite;
 }
 #page4 .introduce .img-deco .circle3{
@@ -927,7 +927,7 @@ h2.blink::after{
     height:90vh;
 }
 #page6 .contact-wrap{
-    padding:250px 0 0 0;
+    padding:25vh 0 0 0;
     box-sizing:border-box;
     width:70%;
     height:100%;
@@ -995,7 +995,7 @@ h2.blink::after{
     border-radius:50% 50% 0 0;
     background-color: var(--subcolor);
     position: absolute;
-    bottom:-730px;
+    bottom:-750px;
     left:50%;
     transform:translateX(-50%);
     opacity:0;
