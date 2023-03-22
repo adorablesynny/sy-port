@@ -149,7 +149,8 @@ $(window).scroll(function(){
     if( scrollTop >= page4){
         let textmove = scrollTop/-6;
 
-        $("#page5 .mytext").css({transform:"translateX("+ textmove +"px"});
+        $("#page5 .mytext").css({transform:"translateX("+ textmove +"px", opacity:"1"});
+
     }
 
     /* 6 */

@@ -906,7 +906,8 @@ h2.blink::after{
     height:100px;
     transform:translateX(0);
     position: absolute;
-    left:75%;
+    left:70%;
+    opacity:0;
 }
 #page5 .mytext p{
     font-size:80px;
