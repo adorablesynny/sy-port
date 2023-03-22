@@ -146,7 +146,7 @@ $(window).scroll(function(){
     }
 
     /* 5 텍스트 움직이기 */
-    if( scrollTop >= page5-1000){
+    if( scrollTop >= page4){
         let textmove = scrollTop/-6;
 
         $("#page5 .mytext").css({transform:"translateX("+ textmove +"px"});
