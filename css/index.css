@@ -906,7 +906,7 @@ h2.blink::after{
     height:100px;
     transform:translateX(0);
     position: absolute;
-    left:70%;
+    left:76%;
     opacity:0;
 }
 #page5 .mytext p{
