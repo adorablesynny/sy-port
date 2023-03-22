@@ -48,7 +48,7 @@ h2{
     height:auto;
     font-family: var(--english);
     font-size:60px;
-    padding:30px 30px 35px 35px;
+    padding:30px 30px 35px 3vw;
     font-weight:600;
     letter-spacing:8px;
     position: absolute;
@@ -289,10 +289,10 @@ h2.blink::after{
 #page1 .purple{
     position: absolute;
     top:0;
-    left:-50%;
+    left:-90%;
     background-color: var(--maincolor);
     box-shadow:6px -3px 6px rgba(0,0,0,0.2);
-    width:100%;
+    width:140%;
     height:100%;
     z-index:2;
 }
@@ -779,13 +779,12 @@ h2.blink::after{
     box-sizing:border-box;
 }
 #page4 .introduce .intro-wrap{
-    width:65%;
+    width:1450px;
     height:100%;
     margin:0 auto;
     position: relative;
 }
 #page4 .introduce .intro-wrap > div{
-    margin:0 auto;
     position: absolute;
 }
 #page4 .introduce .intro-left{
@@ -798,6 +797,7 @@ h2.blink::after{
     border-radius:10px;
     box-shadow:0px 0px 5px var(--maincolor);
     overflow:hidden;
+    margin-right:50px;
     transition:all .5s;
     z-index:2;
     opacity:0;
@@ -815,7 +815,8 @@ h2.blink::after{
     width:850px;
     height:auto;
     opacity:0;
-    right:-18%;
+    margin:80px 0 0 0;
+    right:0;
 }
 #page4 .introduce .intro-left.appear{
     animation:introappear .5s .9s both;
@@ -994,7 +995,7 @@ h2.blink::after{
     border-radius:50% 50% 0 0;
     background-color: var(--subcolor);
     position: absolute;
-    bottom:-700px;
+    bottom:-730px;
     left:50%;
     transform:translateX(-50%);
     opacity:0;
