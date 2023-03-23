@@ -18,6 +18,45 @@ body{
 body::-webkit-scrollbar {
     display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
+
+/* loading */
+#load{
+    width:100vw;
+    height:100vh;
+    background-image:linear-gradient(to right, rgb(97, 98, 206) 10%, rgb(102, 234, 207) 100%);
+    /* overflow-y:hidden; */
+}
+.loading{
+    width:20px;
+    height:100px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    animation:circle ease-in-out 1s 100;
+}
+.loading > span{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:#fff;
+    display:block;
+    box-shadow:0 0 10px 2px #fff;
+}
+.loading > .circle1{
+    position:absolute;
+    top:0;
+}   
+.loading > .circle2{
+    position:absolute;
+    bottom:0;
+}
+
+@keyframes circle{
+    0%{ transform:rotate(0deg);}
+    100%{ transform:rotate(180deg);}
+}
+
 .gotoTop{
     position: fixed;
     bottom:40px;
@@ -76,44 +115,7 @@ h2.blink::after{
     animation:textblink .9s 2s infinite;
     opacity:0;
 }
-/* loading */
-#load{
-    width:100vw;
-    height:100vh;
-    background-image:linear-gradient(to right, rgb(97, 98, 206) 10%, rgb(102, 234, 207) 100%);
-    z-index:999;
-    overflow-y:hidden;
-}
-.loading{
-    width:20px;
-    height:100px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%, -50%);
-    animation:circle ease-in-out 1s 100;
-}
-.loading > span{
-    width:20px;
-    height:20px;
-    border-radius:50%;
-    background-color:#fff;
-    display:block;
-    box-shadow:0 0 10px 2px #fff;
-}
-.loading > .circle1{
-    position:absolute;
-    top:0;
-}   
-.loading > .circle2{
-    position:absolute;
-    bottom:0;
-}
 
-@keyframes circle{
-    0%{ transform:rotate(0deg);}
-    100%{ transform:rotate(180deg);}
-}
 /* 1 */
 #page1 .wrap{
     width:100%;
@@ -389,7 +391,7 @@ h2.blink::after{
     color:var(--clear);
     text-shadow:0px 0px 10px var(--clear);
 }
-#page1 .middle-content .name::after{
+#page1 .middle-content .name.blink::after{
     content:"";
     display:inline-block;
     width:2px;
@@ -628,7 +630,7 @@ h2.blink::after{
     opacity:0;
 }
 #page3 .left div.portfoliot:last-child{
-    top:38%;
+    top:36%;
 }
 #page3 .left div.appear{
     animation:textappear 1s both;
