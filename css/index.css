@@ -718,7 +718,7 @@ h2.blink::after{
     font-weight:bold;
     text-decoration:none;
     position: absolute;
-    top:68%;
+    top:72%;
     left:50%;
     transform:translateX(-50%);
     border:2px solid var(--clear); 
