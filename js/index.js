@@ -1,10 +1,5 @@
 /* loading */
-$("#load").css({"overflow-y":"hidden"});
-
 $(window).load(function(){
-    $("#load").fadeOut();
-    $(".gotoTop").css({"opacity":"80%"});
-    $("#page1 .middle-content .name").addClass("blink");
 
     /* 1 로딩 끝난 이후부터 이름 한글자씩 나타나게 하기*/
     let $name = $("#page1 .middle-content .name");
