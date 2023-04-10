@@ -370,7 +370,7 @@ h2.blink::after{
     text-shadow:0px 0px 10px var(--clear);
     color:var(--clear);
 }
-
+#page1 .middle-content .name span:nth-child(11),
 #page1 .middle-content .name span:nth-child(13),
 #page1 .middle-content .name span:nth-child(15),
 #page1 .middle-content .name span:nth-child(17),

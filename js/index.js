@@ -1,22 +1,18 @@
-/* loading */
-$(window).load(function(){
 
-    /* 1 로딩 끝난 이후부터 이름 한글자씩 나타나게 하기*/
-    let $name = $("#page1 .middle-content .name");
+let $name = $("#page1 .middle-content .name");
 
-    $name.each(function(){
-        let text = $(this).text();
-        let split = text.split('').join("</span><span aria-hidden='true'>");
-        split = "<span aria-hidden='true'>" + split + "</span>"
-        $(this).html(split).attr("aria-label", text);
-    });
+$name.each(function(){
+    let text = $(this).text();
+    let split = text.split('').join("</span><span aria-hidden='true'>");
+    split = "<span aria-hidden='true'>" + split + "</span>"
+    $(this).html(split).attr("aria-label", text);
+});
 
-    $("#page1 .middle-content").each(function(index){
-        $(this).find(".name span").each((index)=>{
-            setTimeout(() => {
-                $(this).find(".name span").eq(index).addClass("show");
-            },200 * index)
-        });
+$("#page1 .middle-content").each(function(index){
+    $(this).find(".name span").each((index)=>{
+        setTimeout(() => {
+            $(this).find(".name span").eq(index).addClass("show");
+        },200 * index)
     });
 });
 
