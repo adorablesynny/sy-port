@@ -1,5 +1,4 @@
 /* loading */
-$("#load").css({"overflow-y":"hidden"});
 
 $(window).load(function(){
     $("#load").fadeOut();
