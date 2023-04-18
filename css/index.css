@@ -822,6 +822,7 @@ h2.blink::after{
     opacity:0;
     margin:3vh 0 0 0;
     right:0;
+    z-index:2;
 }
 #page4 .introduce .intro-left.appear{
     animation:introappear .5s .9s both;
@@ -913,6 +914,7 @@ h2.blink::after{
     position: absolute;
     left:72%;
     opacity:0;
+    z-index:2;
 }
 #page5 .mytext p{
     font-size:80px;
