@@ -689,6 +689,9 @@ h2.blink::after{
     color:var(--clear);
     line-height:35px;
 }
+#page3 .left div.portfoliot > p span{
+    font-size:15px;
+}
 
 #page3 .right{
     position: absolute;
